@@ -39,7 +39,8 @@ class LexicalAnalyzer:
             ('INTEGER_CONST', r'\d(\d)*'),          # INT
             ('NEWLINE', r'\n'),         # NEW LINE
             ('SKIP', r'[ \t]+'),        # SPACE and TABS
-            ('MISMATCH', r'.'),         # ANOTHER CHARACTER
+            ('OTHERS', r'.'),         # ANOTHER CHARACTER
+
         ]
 
         tokens_join = '|'.join('(?P<%s>%s)' % x for x in rules)

@@ -20,5 +20,4 @@ class Buffer:
 
                 # Reset the buffer
                 buffer = []
-
         arq.close()
